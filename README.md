@@ -22,6 +22,7 @@ scoring = 'accuracy'
 precision=[]
 recall=[]
 
+
 for name, model in models:
     
     clf = model.fit(X_train_res, y_train_res)
