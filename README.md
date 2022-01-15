@@ -1,10 +1,11 @@
 # Moldelling-all-supervised-ML-algorithms-together-
-The dataset presented in this case is of Semiconductor manufacturing process. It represents a selection of such features where each example represents a single production entity with
-associated measured features and the labels represent a simple pass/fail yield for in house line testing.
+The dataset presented in this case is of Semiconductor manufacturing process. It represents a selection of such features where each example represents a single production entity withassociated measured features and the labels represent a simple pass/fail yield for in house line testing.
 
 Using for all ML models has been applied to the data.
 A glimpse of code is given below-
+
 models = []
+
 models.append(('LR', LogisticRegression()))
 models.append(('XGB', XGBClassifier(random_state=1, eval_metric='mlogloss'))) 
 models.append(('KNN', KNeighborsClassifier(5)))
