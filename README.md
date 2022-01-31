@@ -5,15 +5,15 @@ Using for all ML models has been applied to the data.
 
 A glimpse of code is given below:
 
-models = []
+    models = []
 
-models.append(('LR', LogisticRegression()))
-models.append(('XGB', XGBClassifier(random_state=1, eval_metric='mlogloss'))) 
-models.append(('KNN', KNeighborsClassifier(5)))
-models.append(('DT', DecisionTreeClassifier(max_depth=5)))
-models.append(('RF', RandomForestClassifier(n_estimators=196)))
-models.append(('ADA', AdaBoostClassifier()))
-models.append(('SVC', SVC()))
+    models.append(('LR', LogisticRegression()))
+    models.append(('XGB', XGBClassifier(random_state=1, eval_metric='mlogloss'))) 
+    models.append(('KNN', KNeighborsClassifier(5)))
+    models.append(('DT', DecisionTreeClassifier(max_depth=5)))
+    models.append(('RF', RandomForestClassifier(n_estimators=196)))
+    models.append(('ADA', AdaBoostClassifier()))
+    models.append(('SVC', SVC()))
 
 
 #evaluate each model in turn
