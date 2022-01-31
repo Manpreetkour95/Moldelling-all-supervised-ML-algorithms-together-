@@ -16,24 +16,24 @@ A glimpse of code is given below:
     models.append(('SVC', SVC()))
 
 
-#evaluate each model in turn
+    #evaluate each model in turn
 
-results = []
-names = []
-scoring = 'accuracy'
-precision=[]
-recall=[]
-
-
-for name, model in models:
-    
-    clf = model.fit(X_train_res, y_train_res)
-    pred = clf.predict(X_test)
-    
-    cv_results=accuracy_score(y_test, pred)
+    results = []
+    names = []
+    scoring = 'accuracy'
+    precision=[]
+    recall=[]
 
 
-    tn, fp, fn, tp = confusion_matrix(y_test,pred).ravel()
-        #visualization of confusion matrix in the form of a heatmap
-        
-    cm= confusion_matrix(y_test, pred)
+    for name, model in models:
+
+        clf = model.fit(X_train_res, y_train_res)
+        pred = clf.predict(X_test)
+
+        cv_results=accuracy_score(y_test, pred)
+
+
+        tn, fp, fn, tp = confusion_matrix(y_test,pred).ravel()
+            #visualization of confusion matrix in the form of a heatmap
+
+        cm= confusion_matrix(y_test, pred)
