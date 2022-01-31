@@ -3,7 +3,7 @@ The dataset presented in this case is of Semiconductor manufacturing process. It
 
 Using for all ML models has been applied to the data.
 
-A glimpse of code is given below-
+A glimpse of code is given below:
 
 models = []
 
